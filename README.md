@@ -40,8 +40,6 @@ A modern music streaming web application built to bring music, personalization, 
 
 ## 📸 Screenshots
 
-## 📸 Screenshots
-
 ### 🏠 Home Page
 ![SARGAM Home](./screenshots/home1.png)
 
