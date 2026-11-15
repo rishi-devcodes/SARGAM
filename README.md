@@ -1,36 +1,168 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎵 SARGAM — Your Music, Your Space.
 
-## Getting Started
+A modern music streaming web application built to bring music, personalization, and a seamless listening experience together.
 
-First, run the development server:
+**SARGAM** is a music web application where users can explore music, play their favourite tracks, manage liked songs, and create personalized playlists — all through a clean and immersive interface.
+
+<p align="center">
+  <a href="https://github.com/rishi-devcodes/SARGAM">
+    <img src="https://img.shields.io/badge/GitHub-SARGAM-181717?style=for-the-badge&logo=github" alt="GitHub Repository"/>
+  </a>
+  <img src="https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js" alt="Next.js"/>
+  <img src="https://img.shields.io/badge/TypeScript-Enabled-3178C6?style=for-the-badge&logo=typescript" alt="TypeScript"/>
+  <img src="https://img.shields.io/badge/Supabase-Backend-3FCF8E?style=for-the-badge&logo=supabase" alt="Supabase"/>
+</p>
+
+---
+
+## ✨ Features
+
+- **Music Player** — Play and control music through an interactive audio player.
+- **User Authentication** — Sign up, log in, and securely manage your account.
+- **Liked Songs** — Save your favourite tracks to your personal library.
+- **Custom Playlists** — Create playlists, add songs, and delete playlists.
+- **Personal Library** — Access your liked songs and created playlists.
+- **Persistent Data** — User preferences and playlists are stored using Supabase.
+- **Responsive Interface** — Designed to provide a smooth experience across different screen sizes.
+- **Modern UI** — A dark-themed interface focused on simplicity and an immersive music experience.
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Next.js 16 | React framework |
+| React | UI development |
+| TypeScript | Type-safe development |
+| Tailwind CSS | Styling and responsive UI |
+| Supabase | Authentication and database |
+| HTML5 Audio | Music playback |
+| Git & GitHub | Version control |
+
+## 📸 Screenshots
+
+> Add your actual application screenshots here.
+
+### Home Page
+<!-- Replace with your screenshot -->
+<!-- ![SARGAM Home](./screenshots/home.png) -->
+
+### Music Player
+<!-- ![SARGAM Player](./screenshots/player.png) -->
+
+### Your Library
+<!-- ![SARGAM Library](./screenshots/library.png) -->
+
+### Authentication
+<!-- ![SARGAM Authentication](./screenshots/authentication.png) -->
+
+## 🚀 Getting Started
+
+Follow these steps to run SARGAM locally.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/rishi-devcodes/SARGAM.git
+```
+
+### 2. Navigate to the Project
+
+```bash
+cd SARGAM
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure Environment Variables
+
+Create a `.env.local` file in the root directory.
+
+Add your Supabase credentials:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key
+```
+
+Get these values from your Supabase project's API settings.
+
+**Important:** Never commit your actual `.env.local` file or expose secret service-role keys in client-side code.
+
+### 5. Start the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+SARGAM/
+│
+├── public/
+│   └── music/              # Local music assets
+│
+├── src/
+│   ├── app/
+│   │   └── page.tsx        # Main application page
+│   │
+│   ├── components/
+│   │   └── AuthModal.tsx   # Authentication interface
+│   │
+│   ├── proxy.ts             # Application proxy
+│   │
+│   └── utils/
+│       └── supabase/
+│           ├── client.ts   # Supabase client
+│           └── server.ts   # Supabase server client
+│
+├── .env.local              # Environment variables (not committed)
+├── .gitignore
+├── package.json
+└── README.md
+```
 
-## Learn More
+## 🗄️ Database
 
-To learn more about Next.js, take a look at the following resources:
+SARGAM uses Supabase for authentication and persistent user data.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The application uses the following database tables:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `user_likes` — Stores songs liked by users.
+- `playlists` — Stores user-created playlists.
+- `playlist_songs` — Stores songs associated with playlists.
 
-## Deploy on Vercel
+Row Level Security (RLS) policies help ensure that users can access and manage only their own library data.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔮 Future Improvements
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Some ideas for future development:
+
+- Playlist editing and renaming.
+- Improved music discovery and search.
+- Enhanced listening history.
+- More personalized recommendations.
+- Additional player customization.
+
+## 👨‍💻 Author
+
+**Rishi Saxena**
+
+B.Tech — Automation & Robotics  
+GGSIPU
+
+- GitHub: [@rishi-devcodes](https://github.com/rishi-devcodes)
+
+---
+
+<p align="center">
+  Made with ❤️ and a passion for music.
+  <br/>
+  <strong>SARGAM — Every song has a story.</strong>
+</p>
