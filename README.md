@@ -40,20 +40,25 @@ A modern music streaming web application built to bring music, personalization, 
 
 ## 📸 Screenshots
 
-> Add your actual application screenshots here.
+## 📸 Screenshots
 
-### Home Page
-<!-- Replace with your screenshot -->
-<!-- ![SARGAM Home](./screenshots/home.png) -->
+### 🏠 Home Page
+![SARGAM Home](./screenshots/home1.png)
 
-### Music Player
-<!-- ![SARGAM Player](./screenshots/player.png) -->
+### 🎧 Music Collection
+![SARGAM Music Collection](./screenshots/home2.png)
 
-### Your Library
-<!-- ![SARGAM Library](./screenshots/library.png) -->
+### 🔐 Authentication
+![SARGAM Authentication](./screenshots/authentication.png)
 
-### Authentication
-<!-- ![SARGAM Authentication](./screenshots/authentication.png) -->
+### 📚 Your Library
+![SARGAM Library](./screenshots/library.png)
+
+### ❤️ Liked Songs
+![SARGAM Liked Songs](./screenshots/liked.png)
+
+### 🎵 Custom Playlists
+![SARGAM Playlist](./screenshots/playlist.png)
 
 ## 🚀 Getting Started
 
